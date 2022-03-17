@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta htty-equiv="X-UA-Compatible" content = "IE-EDGE">
+    <meta name="viewport" content="width-device-width, initial-sc">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <title>Secret Agent</title>
+
+    <script type="text/javascript">
+    function challengeOne() {
+        var code = document.getElementById('code').value;
+        if (code == '1962') {
+            window.location.href = "../html/page2.html";
+        }
+        else {
+            window.location.href = "../html/page3.html";
+        }
+        return 0;
+    }
+    </script>
+</head>
+
+<body>
+
+<p>
+    Hello Agent.<br><br>Your mission is to break into an enemy agency's headquarters,
+    make your way to their leader's office, and download an important file onto a flashdrive and bring that back to us without getting caught.
+    <br><br>We have located a side door with limited security that we believe to be your best chance in. However, there is a 4 digit code.
+    The keypad has digits 1-9 and the numbers 1, 2, 6, and 9 appear to be worn out significantly more so than the others.
+    <br><br>What number do you enter into the keypad?
+</p>
+
+<form action="javascript:challengeOne();">
+    <input type="text" id="code" name="code">
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
